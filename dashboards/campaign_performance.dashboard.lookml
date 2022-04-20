@@ -715,96 +715,96 @@
     col: 4
     width: 20
     height: 13
-  - title: Performance by Season
-    name: Performance by Season
-    model: block_sa360_v2
-    explore: ad_group_events
-    type: marketplace_viz_calendar_heatmap::calendar_heatmap-marketplace
-    fields: [ad_group_events.metric, ad_group_conversion_events._data_date]
-    fill_fields: [ad_group_conversion_events._data_date]
-    filters:
-      ad_group_conversion_events._data_date: NOT NULL
-    sorts: [ad_group_conversion_events._data_date desc]
-    limit: 500
-    column_limit: 50
-    hidden_fields: []
-    hidden_points_if_no: []
-    series_labels: {}
-    show_view_names: false
-    color_picker: ["#7FCDAE", "#7ED09C", "#7DD389", "#85D67C", "#9AD97B", "#B1DB7A",
-      "#CADF79", "#E2DF78", "#E5C877", "#E7AF75", "#EB9474", "#EE7772"]
-    formatting_override: ''
-    rounded: true
-    outline: month
-    label_year: 'true'
-    label_month: 'false'
-    show_legend: 'true'
-    focus_tooltip: 'true'
-    outline_weight: 1
-    cell_color: "#fff"
-    outline_color: "#000"
-    cell_reducer: 1
-    axis_label_color: "#282828"
-    show_row_numbers: true
-    transpose: false
-    truncate_text: true
-    hide_totals: false
-    hide_row_totals: false
-    size_to_fit: true
-    table_theme: gray
-    limit_displayed_rows: false
-    enable_conditional_formatting: true
-    header_text_alignment: left
-    header_font_size: '12'
-    rows_font_size: '12'
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    show_sql_query_menu_options: false
-    show_totals: true
-    show_row_totals: true
-    series_cell_visualizations:
-      ad_group_events.metric:
-        is_active: false
-    conditional_formatting: [{type: along a scale..., value: !!null '', background_color: "#4285F4",
-        font_color: !!null '', color_application: {collection_id: google, palette_id: google-sequential-0},
-        bold: false, italic: false, strikethrough: false, fields: !!null ''}]
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: true
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    legend_position: center
-    point_style: none
-    show_value_labels: false
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    defaults_version: 0
-    series_types: {}
-    listen:
-      Engine: account.account_type
-      Device: ad_group_conversion_events.device_segment
-      Advertiser: advertiser.advertiser
-      Campaign: campaign.campaign
-      Metric Selector: ad_group_events.metric_selector
-    row: 57
-    col: 4
-    width: 20
-    height: 7
+#   - title: Performance by Season
+#     name: Performance by Season
+#     model: block_sa360_v2
+#     explore: ad_group_events
+#     type: marketplace_viz_calendar_heatmap::calendar_heatmap-marketplace
+#     fields: [ad_group_events.metric, ad_group_conversion_events._data_date]
+#     fill_fields: [ad_group_conversion_events._data_date]
+#     filters:
+#       ad_group_conversion_events._data_date: NOT NULL
+#     sorts: [ad_group_conversion_events._data_date desc]
+#     limit: 500
+#     column_limit: 50
+#     hidden_fields: []
+#     hidden_points_if_no: []
+#     series_labels: {}
+#     show_view_names: false
+#     color_picker: ["#7FCDAE", "#7ED09C", "#7DD389", "#85D67C", "#9AD97B", "#B1DB7A",
+#       "#CADF79", "#E2DF78", "#E5C877", "#E7AF75", "#EB9474", "#EE7772"]
+#     formatting_override: ''
+#     rounded: true
+#     outline: month
+#     label_year: 'true'
+#     label_month: 'false'
+#     show_legend: 'true'
+#     focus_tooltip: 'true'
+#     outline_weight: 1
+#     cell_color: "#fff"
+#     outline_color: "#000"
+#     cell_reducer: 1
+#     axis_label_color: "#282828"
+#     show_row_numbers: true
+#     transpose: false
+#     truncate_text: true
+#     hide_totals: false
+#     hide_row_totals: false
+#     size_to_fit: true
+#     table_theme: gray
+#     limit_displayed_rows: false
+#     enable_conditional_formatting: true
+#     header_text_alignment: left
+#     header_font_size: '12'
+#     rows_font_size: '12'
+#     conditional_formatting_include_totals: false
+#     conditional_formatting_include_nulls: false
+#     show_sql_query_menu_options: false
+#     show_totals: true
+#     show_row_totals: true
+#     series_cell_visualizations:
+#       ad_group_events.metric:
+#         is_active: false
+#     conditional_formatting: [{type: along a scale..., value: !!null '', background_color: "#4285F4",
+#         font_color: !!null '', color_application: {collection_id: google, palette_id: google-sequential-0},
+#         bold: false, italic: false, strikethrough: false, fields: !!null ''}]
+#     x_axis_gridlines: false
+#     y_axis_gridlines: true
+#     show_y_axis_labels: true
+#     show_y_axis_ticks: true
+#     y_axis_tick_density: default
+#     y_axis_tick_density_custom: 5
+#     show_x_axis_label: true
+#     show_x_axis_ticks: true
+#     y_axis_scale_mode: linear
+#     x_axis_reversed: false
+#     y_axis_reversed: false
+#     plot_size_by_field: false
+#     trellis: ''
+#     stacking: ''
+#     legend_position: center
+#     point_style: none
+#     show_value_labels: false
+#     label_density: 25
+#     x_axis_scale: auto
+#     y_axis_combined: true
+#     ordering: none
+#     show_null_labels: false
+#     show_totals_labels: false
+#     show_silhouette: false
+#     totals_color: "#808080"
+#     defaults_version: 0
+#     series_types: {}
+#     listen:
+#       Engine: account.account_type
+#       Device: ad_group_conversion_events.device_segment
+#       Advertiser: advertiser.advertiser
+#       Campaign: campaign.campaign
+#       Metric Selector: ad_group_events.metric_selector
+#     row: 57
+#     col: 4
+#     width: 20
+#     height: 7
   - name: Campaign Performance
     type: text
     title_text: Campaign Performance
